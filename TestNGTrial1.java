@@ -43,6 +43,8 @@ public class TestNGTrial1 {
 		Thread.sleep(3000);
 	    String Title1 =  driver.getTitle();
 	    System.out.println(Title1);	
+	    String parentWindow = driver.getWindowHandle();
+		System.out.println(parentWindow);
 	}
 	@AfterMethod
 	 public void QuitBrowser() {
